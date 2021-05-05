@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      
+    <title>Document</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: #6058a5;
+        }
+
+        .middle {
+            position: relative;
+            background-color: #6058a5;
+            border: none;
+            color: #b9a2ce;
+            font-family: Century;
+            font-size: 1.7vw;
+        }
+
+    </style>
+    
+</head>
+<body>
+    <div class="middle">
+    <h1>WORD COUNTER</h1>
+
+    <form action="{% url 'result' %}" method="POST">
+        {% csrf_token %}
+        <textarea rows="50" cols="120" style="background-color: transparent; border-color: #b9a2ce; color:#b9a2ce;" name='sentence'></textarea><br>
+    </div>
+        <input type="submit"></input>
+    </form>
+    </div>
+</body>
+</html>

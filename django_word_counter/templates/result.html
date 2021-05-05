@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: #6058a5;
+        }
+
+        .middle {
+            position: relative;
+            background-color: #6058a5;
+            border: none;
+            color: #b9a2ce;
+            font-family: Century;
+            font-size: 1.7vw;
+        }
+        .result_color {
+            color : #b9a2ce; 
+        }
+    </style>
+</head>
+<body>
+    <div class="middle">
+    <h1>RESULT</h1><hr/>
+    <!--튜플(tuple) 형태로 넘겨서 왔음 -->
+    <!-- 튜플(tuple) 리스트와 비슷한 자료형-->
+</div>
+<div class="result_color">
+    {% for word, count in word_counts %}
+    {{word}} : {{count}}<br>
+     <!-- 반복문 사용할 수 있게됨 이때 for문을 한번 열었으면 endfor를 사용하여 여기가 반복문의 끝이야를 지정해줘야함  -->
+        {% endfor %}
+    </div>
+        
+</body>
+</html>
+
